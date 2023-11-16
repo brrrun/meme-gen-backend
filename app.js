@@ -20,9 +20,9 @@ server.use((req, res, next) => {
   if (domainList.includes(origin)) {
     console.log(origin);
     res.header("Access-Control-Allow-Origin", origin);
+    res.header("Access-Control-Allow-Headers", "*");
+    next();
   }
-  res.header("Access-Control-Allow-Headers", "*");
-  next();
 });
 server.use(router);
 
