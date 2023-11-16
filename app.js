@@ -10,7 +10,6 @@ const PORT = 5005;
 server.use(middlewares);
 server.use(morgan("dev"));
 
-server.use(cors())
 server.use(router);
 
 server.listen(PORT, () => {
