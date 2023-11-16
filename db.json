@@ -1,16 +1,3 @@
 {
-  "created": [
-    {
-      "imgLink": "https://api.memegen.link/images/afraid/Top Text/Bottom Text.png",
-      "id": 1
-    },
-    {
-      "imgLink": "https://api.memegen.link/images/afraid/Top Text/Bottom Text.png",
-      "id": 2
-    },
-    {
-      "imgLink": "https://api.memegen.link/images/aag/Top Text/Bottom Text.png",
-      "id": 3
-    }
-  ]
+  "created": []
 }
