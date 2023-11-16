@@ -13,7 +13,7 @@ const domainList = ['http://localhost:5173', 'https://effortless-salmiakki-807f9
 server.use(middlewares);
 server.use(morgan("dev"));
 server.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', domainList)
+  res.header('Access-Control-Allow-Origin', '*')
   res.header('Access-Control-Allow-Headers', '*')
   next();
 });
