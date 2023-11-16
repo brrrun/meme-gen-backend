@@ -1,6 +1,7 @@
 require("dotenv").config();
 const jsonServer = require("json-server");
 const morgan = require("morgan");
+const cors = require("cors");
 
 const server = jsonServer.create();
 const router = jsonServer.router("db.json");
@@ -9,7 +10,7 @@ const PORT = 5005;
 
 const domainList = [
   "http://localhost:5173",
-  "https://effortless-salmiakki-807f97.netlify.app/",
+  "https://effortless-salmiakki-807f97.netlify.app",
 ];
 
 server.use(middlewares);
@@ -21,6 +22,7 @@ server.use((req, res, next) => {
     console.log(origin);
     res.header("Access-Control-Allow-Origin", origin);
     res.header("Access-Control-Allow-Headers", "*");
+    server.use((cors))
     next();
   }
 });
